@@ -1,6 +1,7 @@
 ---
 import "../styles/reset.css";
 import "../styles/global.css";
+import Header from "../components/Header.astro";
 // TODO: import the Header component
 const { pageTitle } = Astro.props;
 ---
@@ -21,7 +22,7 @@ const { pageTitle } = Astro.props;
   </head>
 
   <body>
-    <!-- TODO: render the Header component here -->
+    <Header />
     <main>
       <slot />
     </main>
